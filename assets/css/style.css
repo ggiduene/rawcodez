@@ -54,7 +54,23 @@ background: linear-gradient(90deg, rgba(254,254,255,1) 38%, rgba(156,218,162,1) 
 .intro-text{
   width:350px;
   overflow:hidden;
+}
+.intro-text>p,b{
   animation :mymove 2s;
+}
+.dev{
+  animation :dev 3s;
+}
+.btn-group>button{
+  animation:btng 3s;
+}
+@keyframes btng {
+  from { position:relative; bottom: -500px;}
+  to {  position:relative;bottom: 0px;}
+}
+@keyframes dev {
+  from { display: none;}
+  to {  display:bold;}
 }
 @keyframes mymove {
   from { margin-left: -500px;}
