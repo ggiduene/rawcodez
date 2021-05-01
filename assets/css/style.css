@@ -1,5 +1,7 @@
 *{
   font-family: 'Arima Madurai', cursive;
+  margin:0px;
+  padding:0px
 }
 .roundbtn{
   padding:10px;
@@ -9,6 +11,8 @@
 }
 .btn-group{
   display:flex;
+  margin-top: 50px;
+
 }
 .course-title{
   text-align:center;
@@ -52,13 +56,13 @@ nav>ul>li{
   justify-content: space-between;
   padding:0px 150px;
   background: rgb(254,254,255);
-background: linear-gradient(90deg, rgba(254,254,255,1) 38%, rgba(156,218,162,1) 59%);
+  background: linear-gradient(90deg, rgba(254,254,255,1) 0%, rgba(221,251,224,1) 99%);
 }
 .intro-text{
   width:350px;
   overflow:hidden;
 }
-.intro-text>p,b{
+.intro-text>p{
   animation :mymove 2s;
 }
 .dev{
@@ -79,6 +83,7 @@ background: linear-gradient(90deg, rgba(254,254,255,1) 38%, rgba(156,218,162,1) 
   from { margin-left: -500px;}
   to {  margin-left: 0px;}
 }
+/*cards section */
 .cards{
   display:flex;
   justify-content: space-between;
@@ -92,4 +97,55 @@ background: linear-gradient(90deg, rgba(254,254,255,1) 38%, rgba(156,218,162,1) 
 .onecard>img{
   width:100%;
   height:150px
+}
+/*Requires sectioon */
+.requires{
+  display:flex;
+  justify-content: space-between;
+  padding:100px;
+  background: rgb(254,254,255);
+  background: linear-gradient(90deg, rgba(254,254,255,1) 0%, rgba(221,251,224,1) 99%);
+}
+.imagesec>img{
+  width:99%
+}
+.tabhead{
+
+  padding:20px;
+  margin-bottom: 10px;
+  background-color: #E3FFE8
+}
+.weoffer>p{
+  margin-bottom: 30px
+}
+.uneed>p{
+  margin-bottom: 30px
+}
+.weoffer>ul>li{
+  margin-bottom: 30px;
+}
+.uneed>ul>li{
+  margin-bottom: 30px;
+}
+.tabcontent{
+  margin-top: 20px;
+  width: 500px;
+  height:370px
+}
+.tabsec>.active{
+  border-left: 3px solid green;
+  border-right: 3px solid green;
+  border-top: 3px solid green;
+
+}
+.weoffer,.uneed{
+  border-left: 3px solid green;
+  border-right: 3px solid green;
+  border-bottom: 3px solid green;
+  border-top: 3px solid green;
+  padding:30px
+}
+.askbtn{
+  margin-top: 30px;
+  width:300px;
 }
