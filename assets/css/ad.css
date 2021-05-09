@@ -1,0 +1,17 @@
+.flex{
+  display:flex
+}
+.all{
+  /*background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+*/
+background-color: black
+}
+.single{
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px;
+  width:80%;
+  margin: auto;
+  margin-top: 30px;
+
+}
