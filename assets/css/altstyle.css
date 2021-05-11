@@ -2,6 +2,7 @@
 	padding:0px;
 	margin:0px;
 	font-family: 'Arima Madurai', cursive;
+	box-sizing: border-box;
 }
 
 .navbar-active{
@@ -11,7 +12,7 @@
 	position:fixed;
 	top:0;
 	left:0;
-	width:99%;
+	width:100%;
 	background-color: white;
 	flex-wrap: wrap;
 	transition: 1s
@@ -272,4 +273,98 @@ footer{
 	font-weight: bold;
 	margin-bottom: 20px;
 	list-style: none
+}
+
+/** pricing */
+.price-tabs{
+	padding:100px;
+}
+.price-single{
+     width:300px;
+     padding:50px 0;
+}
+.price-single>h3{
+	text-align: center
+}
+.amt{
+	font-weight:bold;
+	font-size: 18px;
+	color:midnightblue;
+}
+.pbody>ul{
+	margin-bottom: 30px;
+	margin-top: 30px
+}
+.pbody>ul>li{
+	padding:15px 0;
+	border-bottom:1px solid green;
+	list-style: none;
+	text-align: center
+}
+.btn-enrol{
+	padding:10px 50px;
+	border:1px solid green;
+	border-radius:5px;
+	color:green;
+	text-decoration: none;
+	text-align: center;
+	width:350px;
+	margin-top: 30px;
+	margin: auto;
+}
+.price-grid1, .price-grid2{
+	display:flex;
+	justify-content: space-between;
+
+}
+
+.course-wrapper{
+	display:grid;
+	grid-template-columns: 20% 80%;
+	padding:100px;
+}
+.course-left{
+    box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding:10px;
+    display: inline-block;
+    height:auto;
+}
+.course-left>ul>li{
+	list-style: none;
+	margin: 30px 10px
+}
+.course-content{
+	display:flex;
+	justify-content: center
+}
+.headlist{
+	font-size: 18px;
+	font-weight:bold;
+}
+.course-content>ul>li{
+	list-style: none;
+
+}
+.course-content>ul{
+	margin-left: 20px
+}
+.form{
+	width:70%;
+	padding:100px;
+	margin: auto
+}
+.regform{
+	margin:auto;
+	box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding:30px;
+	margin:30px;
+}
+.course-price{
+	display:flex;
+	justify-content: space-between;
+	height:35px;
+}
+.custom-select{
+	width:150px;
+	height:35px;
 }

@@ -3,11 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	 <link rel="stylesheet" href="assets/css/altstyle.css">
 	 <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&display=swap" rel="stylesheet">
 	 <link rel="icon" href="assets/img/icon.png">
 	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-	<title>Rawcode</title>
+	<title>RAwcode</title>
 </head>
 <body>
 	<div class="">
@@ -24,66 +29,78 @@
 			<p>What drives Us</p>
 		</div>
 		</div>
-		<section class="about-intro">
-			<h1>What we do</h1>
-			<p>
-				Our goal is simply to build an army of programmers and software developers. We dedicate our free time to teaching and mentoring upcoming software developers in exchange for a cup of coffee.
-			</p>
-			<a href="courses.html" class="btn-link">How it works</a>
-		</section>
-		<section class="history"style="position:relative">
-			<img src="assets/img/imagesec.png" alt="">
-			<p class="breadtxt">A Brief History About Us</p>
-			<div class="lists">
-				<ul>
-					<li>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus error, tenetur ullam excepturi aspernatur. Esse, perferendis quidem deserunt, temporibus necessitatibus facilis odit repellendus quia praesentium aliquid iste laudantium aut dolores ducimus velit quam dolorem, expedita, quos totam ratione minus architecto! Asperiores eligendi omnis tempora placeat illum quaerat facilis laborum.
-				</li>
-					<li>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro est explicabo quibusdam, fugit numquam sint sed voluptas earum error necessitatibus in accusantium deserunt nobis eveniet et quas officia totam, molestias.
-					</li>
-					<li>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequuntur esse facere inventore perferendis obcaecati iusto dolore rerum debitis possimus ducimus sint aliquam nulla, nihil modi, ipsa quibusdam ipsum cum nemo? Architecto unde, natus laboriosam autem accusamus dolor. Nam ullam quibusdam, culpa! Vitae tempora quidem doloribus, facere in dolorum laboriosam nulla voluptatum doloremque animi alias soluta molestias odio aliquid? Deserunt?
-					</li>
-					<li>
-						Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Voluptas odio dolores pariatur fugit dignissimos adipisci, ex modi obcaecati corrupti hic rerum itaque ducimus suscipit facere laboriosam quos eius magnam. Aliquid, suscipit, sit ullam quia deserunt delectus aspernatur quasi doloribus cumque!
-					</li>
-				</ul>
+		
+		
+
+			<div class="reg-all">
+				<div class="form">
+					<form class="regform">
+					    <div class="form-group">
+					        <label for="inputEmail">Full Name</label>
+					        <input type="text" class="form-control" id="fullname" placeholder="Name">
+					    </div>
+					    <div class="form-group">
+					        <label for="inputPassword">Email</label>
+					        <input type="email" class="form-control" id="email" placeholder="Email">
+					    </div>
+					    <div class="form-group">
+					        <label for="inputPassword">Phone Number (WhatsApp)</label>
+					        <input type="text" class="form-control" id="phone" placeholder="Number">
+					    </div>
+						
+					    <div class="form-group course-price" style="margin-bottom: 50px">
+					    	<div>
+					    		<label for="course">Select course</label><br>
+					    		<select class="custom-select mt-3" name="course">
+					        <option selected="">Select Course</option>
+						    <option >HTML & CSS</option>
+						    <option value="1">Javascript</option>
+						    <option value="">
+						    	MySQL
+						    </option>
+						    <option value="2">PHP/Laravel</option>
+						    <option value="3">
+						    	Python
+						    </option>	
+                           </select>
+					    	</div>
+					        
+                           <div>
+                           	<label for="price">Price</label><br>
+                           	 <input type="text" name="price" readonly=""  style="height:30px" 
+                           >
+                           </div>
+                           <div>
+                           	<label for="course">Schedule Lectures</label><br>
+					    		<select class="custom-select mt-3" name="course">
+					        <option selected="">9 a.m - 10a.m</option>
+						    <option >5pm-6pm</option>
+						    <option value="1">7pm-8p.m</option>
+						    	
+                           </select>
+                           </div>
+                          
+					    </div>
+					    
+					    <button type="submit" class="btn btn-primary">Sign in</button>
+					</form> 
+				</div>
 			</div>
-		</section>
-<section class="pricing">
-	<div class="single-pricing flex">
-		<div class="price-img">
-			<img src="assets/img/pricing.png" alt="">
-		</div>
-		<div class="price-cont">
-			<h1 class="bigtxt">See our pricing</h1>
-			<p class="pricing-body">
-				Whether you’re a team of 2 or 2,000, there’s a Trello tailor-made for your organization.
-			</p>
-			<a class="holo-btn pricing-btn">
-				View Prices
-			</a>
-		</div>
-	</div>
 
-	<div class="single-pricing flex">
-		<div class="price-img">
-			<img src="assets/img/pricing.png" alt="">
-		</div>
-		<div class="price-cont">
-			<h1 class="bigtxt">See our pricing</h1>
-			<p class="pricing-body">
-				Whether you’re a team of 2 or 2,000, there’s a Trello tailor-made for your organization.
-			</p>
-			<a class="holo-btn pricing-btn">
-				View Prices
-			</a>
-		</div>
-	</div>
-</section>
 
-<footer>
+
+
+
+
+
+
+
+
+
+
+
+
+		<footer>
 	<div class="footer-wrap">
 		<div class="footerLogo">
 			<img src="assets/img/logo.png" alt="">
@@ -124,26 +141,11 @@
 		&copy; RAWCODEZ 2021
 	</div>
 </footer>
-		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     </div>
 	<script src="assets/js/jquery.js"></script>
   <script src="assets/js/script.js" charset="utf-8"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
