@@ -4,8 +4,7 @@
 	font-family: 'Arima Madurai', cursive;
 	box-sizing: border-box;
 }
-@media only screen and (min-width: 900px) {
-
+@media only screen and (min-width: 761px) and (max-width: 899px){
 .navbar-active{
 	display: flex;
 	box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -68,23 +67,38 @@ background: linear-gradient(180deg, rgba(219,242,73,1) 0%, rgba(255,254,250,1) 1
 }
 
 .main-slide{
-	display: flex;
-	justify-content: space-between;
-	padding:50px 100px;
+	padding:100px 30px;
+	position:relative;
 }
 .intro{
 	display:flex;
 	flex-direction: column;
-	justify-content: center;
+    justify-content: center;
+    width:50vw;
+
 }
 .btxt{
-	font-size:40px;
+	font-size:25px;
 	font-weight: bold;
-	line-height: 50px
+	line-height: 30px;
 }
 .become{
 	transition:1s;
 	animation:comin 2s;
+	margin-bottom: 20px
+}
+.intro-image img{
+	position:absolute;
+	top:0;
+	right:0%;
+	z-index:1;
+	opacity:0.1;
+	overflow: hidden;
+}
+.btn-group{
+	display:flex;
+	margin-top: 30px;
+	animation:btn 3s;
 }
 @keyframes comin{
 
@@ -116,9 +130,13 @@ background: linear-gradient(180deg, rgba(219,242,73,1) 0%, rgba(255,254,250,1) 1
 }
 .goal{
 	text-align: center;
-	padding:100px 300px;
+	padding:0px 30px;
 	font-size: 18px
 }
+.code-along{
+	margin-bottom: 30px
+}
+
 .holo-btn{
 	display:inline-block;
 	padding:10px;
@@ -128,21 +146,27 @@ background: linear-gradient(180deg, rgba(219,242,73,1) 0%, rgba(255,254,250,1) 1
 	border:1.5px solid green;
 	border-radius:3px;
 	color:green;
+	margin: 30px auto
 }
 .holo-btn:hover{
 	background-color: green;
 	color:lightcyan;
 }
 .our-courses{
-	padding:100px 100px;
+	padding:10px 10px;
 
 }
 .flex{
 	display:flex;
 	height:400px;
 	justify-content: space-between;
+	margin-bottom: 30px
 
 }
+.javascript img{
+	width:50%;
+}
+
 .desc{
 	display:flex;
 	flex-direction: column;
@@ -198,12 +222,12 @@ background: linear-gradient(180deg, rgba(9,48,7,1) 0%, rgba(57,179,67,1) 100%);
 	padding:50px;
 }
 .breadcrumb>h1{
-	font-size: 30px;
+	font-size: 23px;
 	font-weight: bold;
 	color:white;
 }
 .breadcrumb>p{
-	font-size: 18px;
+	font-size: 15px;
 	font-weight: bold;
 	color:white;
 }
@@ -211,16 +235,17 @@ background: linear-gradient(180deg, rgba(9,48,7,1) 0%, rgba(57,179,67,1) 100%);
 	position:absolute;
 	top:10%;
 	z-index: -5;
-	opacity: 0.1
+	opacity: 0.1;
+	display: none
 }
 .about-intro{
 	text-align: center;
-	padding:100px 200px;
+	padding:10px 20px;
 	background: rgb(214,241,212);
     background: linear-gradient(180deg, rgba(214,241,212,1) 100%, rgba(214,255,217,1) 100%); 
 }
 .breadtxt{
-	font-size: 30px;
+	font-size: 15px;
 	font-weight: bold;
 	text-align: center
 }
@@ -234,7 +259,6 @@ background: linear-gradient(180deg, rgba(9,48,7,1) 0%, rgba(57,179,67,1) 100%);
 }
 .lists{
 	font-size: 18px;
-	max-width:60%;
 	margin:auto;
 }
 .lists>ul>li{
@@ -254,7 +278,10 @@ footer{
 	display:flex;
 	justify-content: space-between;
 	background-color: #f0faf9;
-	padding:100px;
+	padding:30px;
+}
+.footer-wrap ul{
+	margin:5px 10px;
 }
 .footerLogo{
 	width:200px;
@@ -397,13 +424,12 @@ footer{
 
 }
 .contact-area{
-	padding:100px;
+	padding:10px;
 }
 .form-left{
 	border:5px solid #ebebeb ;
 	width:100%;
 	padding: 15px;
-	margin:20px
 }
 .form-left>input{
 	display: block;
@@ -420,7 +446,7 @@ textarea{
 	border:5px solid #ebebeb ;
 	width:100%;
 	padding: 15px;
-	margin:20px;
+	margin-bottom:20px;
 	outline: 0;
 	display:block;
 }
@@ -428,9 +454,7 @@ textarea{
 	display:block;
 	margin-left: 25px
 }
-.map{
-	display:flex;
-}
+
 .map-left{
 	display:flex;
 	flex-direction: column;
@@ -440,18 +464,16 @@ textarea{
 	text-align: left
 }
 .map-left>p{
-	width:50%;
+	width:100%;
 }
 .content-left{
-	width:50%;
-	margin-left:50%;
+	width:100%;
 	padding:10px;
 }
 .content-left>h3{
 	margin: 30px 0;
 }
-
 .gmap_canvas, .mapouter{
-	width:600px;
+	width:100vw;
 }
 }
